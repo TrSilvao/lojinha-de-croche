@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina de amigurumi</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <header>
+        
+        <div class="header">
+
+            <nav class="header-nav">
+
+                <a class="header-link" href="index.html">Home </a>|
+                <a class="header-link" href="produtos.html"> Nossos Produtos </a>|
+                <a class="header-link" href="Contatos.html"> Fale conosco</a>
+    
+            </nav> 
+
+        </div>               
+
+    </header>
+
+    <main class="main">
+
+        <section class="main-section">
+
+            <div class="main-section-principal">
+
+                <h1 class="title">SilvaRume</h1>
+
+                <p class="description">Amigurumis para enfeitar e presentear.</p>
+
+            </div>
+
+            <div class="main-section-secondary">
+
+                <div class="form-container">
+
+                    <form action="/enviarelatorio" method="post" enctype="multipart/form-data">
+
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="relatorio">Relatório:</label>
+                        <textarea id="relatorio" name="relatorio" rows="10" required></textarea>
+
+                        <label for="arquivo">Anexar Arquivo:</label>
+                        <input type="file" id="arquivo" name="arquivo"> <button type="submit">Enviar Relatório</button> 
+                    
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <p>Feito por Tairone Rocha</p>
+        <P> Tel: (33) 9 8865 8497</P>
+
+    </footer>
+</body>
+</html>

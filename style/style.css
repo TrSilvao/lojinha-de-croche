@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Modak&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--corTextoCabecalhoRodape);
+}
+
+body {
+    background-color: var(--corPrincipal);
+    color:var(--corTextoCabecalhoRodape);
+}
+
+/* --> V A R I A V E I S <-- */ /* --> V A R I A V E I S <-- */
+
+:root {
+        /* cores */
+    --corCabecalhoRodape: #FFDDAE;
+    --corTextoCabecalhoRodape: #000;
+    --corPrincipal: #D4F6FF;
+    --corTextoPrincipal: rgb(121,137,169); 
+    --corSecundaria: rgb(121,137,169);  
+    --corTextoSecundaria: #000;
+
+    /* fontes */
+
+    --fonteCabecalhoRodape: "Krona One", system-ui;
+    --fonteTitulo: "Modak", system-ui;
+    --fonteSubTitulo: "Montserrat", system-ui;
+    --fonteConteudo: "Quicksand", system-ui;
+}
+
+/* -->  G L O B A L  <-- */ /* -->  G L O B A L  <-- */
+
+.header {
+    font-family: var(--fonteCabecalhoRodape);
+    padding: 2% 30% 2% 30%;
+    background-color: var(--corCabecalhoRodape);
+    width: 100vw;
+}
+
+.header-nav {
+    display: flex;
+    gap: 39px;
+}
+
+.header-link {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    font-family: var(--fonteCabecalhoRodape);
+    background-color: var(--corCabecalhoRodape);
+    width: 100vw;
+    padding: 5px 20px;
+}
+
+.main-section-principal{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--corPrincipal);
+    align-items: center;
+    padding: 3%;        
+}
+
+.title {
+    font-family: var(--fonteTitulo);
+    font-weight: 400;
+    font-size: 60px;
+    color: var(--corTextoPrincipal); 
+    text-shadow: -1px -1px 0 black,
+                  1px -1px 0 black,
+                 -1px 1px 0 black,
+                  1px 1px 0 black;            
+}
+
+.description {   
+    font-family: var(--fonteSubTitulo);
+    font-size: 25px; 
+    font-weight: 600;
+    color: var(--corTextoPrincipal);
+    
+}
+
+.main-section-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100vw;
+    background-color: var(--corSecundaria);
+    color:var(--corTextoSecundaria);
+    padding: 50px;
+    gap: 300px;   
+}
+
+/* --> P A G I N A 1, H O M E <-- */ /* --> P A G I N A 1, H O M E <-- */
+
+
+#height {
+    height: 350px;
+    align-items: center;
+}  
+
+.description-secondary-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 10px;
+    width: 400px;
+    font-size: 25px;    
+    font-family: var(--fonteSubTitulo);
+    font-weight: bold;
+}
+
+.description-secondary {
+    display: flex;
+    justify-content: left;
+    align-items: center;    
+    font-family: var(--fonteConteudo);
+    font-weight: 500;
+    width: 400px;
+    font-size: 20px;    
+}
+
+.main-section-secondary-img {
+    width: 200px;  
+    border: 3px;
+    border-style: solid;
+    border-color: #000;
+}
+
+/* --> P A G I N A 2, P R O D U T O S <-- */ /* --> P A G I N A 2, P R O D U T O S <-- */
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-products {
+    font-family: var(--fonteConteudo);
+    font-weight: 600;
+    color: var(--corTextoSecundaria);
+}
+
+
+/* --> P A G I N A 3, C O N T A T O <-- */ /* --> P A G I N A 3, C O N T A T O <-- */
+
+.form-container {
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex; 
+    flex-direction: column; 
+}
+
+label {
+    margin-bottom: 5px; 
+    font-weight: bold; 
+} 
+
+input, textarea { 
+    margin-bottom: 15px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    width: 100%; 
+    box-sizing: border-box; 
+} 
+
+button { 
+    padding: 10px 20px;
+    background-color: #007BFF; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer; 
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
