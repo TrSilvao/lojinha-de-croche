@@ -47,12 +47,21 @@ body {
 }
 
 .header-nav {
-    display: flex;
-    gap: 39px;
+    display: flex; 
+    gap: 2.43rem; 
 }
 
-.header-link {
-    text-decoration: none;
+.header-link { 
+    text-decoration: none; 
+} 
+.menu-toggle { 
+    display: none; 
+} 
+.menu-icon { 
+    display: none; 
+    font-size: 1.5em; 
+    color: var(--corTextoCabecalhoRodape); 
+    cursor: pointer; 
 }
 
 .main {
@@ -63,8 +72,8 @@ body {
 .footer {
     font-family: var(--fonteCabecalhoRodape);
     background-color: var(--corCabecalhoRodape);
-    width: 100vw;
-    padding: 5px 20px;
+    width: 100%;
+    padding: 1% 5%;
 }
 
 .main-section-principal{
@@ -79,7 +88,7 @@ body {
 .title {
     font-family: var(--fonteTitulo);
     font-weight: 400;
-    font-size: 60px;
+    font-size: 3.75rem;
     color: var(--corTextoPrincipal); 
     text-shadow: -1px -1px 0 black,
                   1px -1px 0 black,
@@ -89,7 +98,7 @@ body {
 
 .description {   
     font-family: var(--fonteSubTitulo);
-    font-size: 25px; 
+    font-size: 1.56rem; 
     font-weight: 600;
     color: var(--corTextoPrincipal);
     
@@ -102,15 +111,15 @@ body {
     width: 100vw;
     background-color: var(--corSecundaria);
     color:var(--corTextoSecundaria);
-    padding: 50px;
-    gap: 300px;   
+    padding: 3.12rem;
+    gap: 17rem;   
 }
 
 /* --> P A G I N A 1, H O M E <-- */ /* --> P A G I N A 1, H O M E <-- */
 
 
-#height {
-    height: 350px;
+#height {    
+    height: 21.87rem;
     align-items: center;
 }  
 
@@ -118,9 +127,9 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    padding-bottom: 10px;
-    width: 400px;
-    font-size: 25px;    
+    padding-bottom: 0.62rem;
+    width: 25rem;
+    font-size: 1.56rem;    
     font-family: var(--fonteSubTitulo);
     font-weight: bold;
 }
@@ -131,12 +140,19 @@ body {
     align-items: center;    
     font-family: var(--fonteConteudo);
     font-weight: 500;
-    width: 400px;
-    font-size: 20px;    
+    width: 25rem;
+    font-size: 1.25rem;    
 }
 
 .main-section-secondary-img {
-    width: 200px;  
+    width: 12.5rem;  
+    border: 3px;
+    border-style: solid;
+    border-color: #000;
+}
+
+.main-section-secondary-img-products {
+    width: 12.5rem;  
     border: 3px;
     border-style: solid;
     border-color: #000;
@@ -154,17 +170,21 @@ body {
 .description-products {
     font-family: var(--fonteConteudo);
     font-weight: 600;
+    font-size: 1.70rem;
     color: var(--corTextoSecundaria);
 }
 
+.img-480 {
+    display: none;
+}
 
 /* --> P A G I N A 3, C O N T A T O <-- */ /* --> P A G I N A 3, C O N T A T O <-- */
 
 .form-container {
-    padding: 20px;
+    padding: 1.25rem;
     border-radius: 8px;
     width: 100%;
-    max-width: 500px;
+    max-width: 31.25rem;
     box-sizing: border-box;
 }
 
@@ -174,16 +194,16 @@ form {
 }
 
 label {
-    margin-bottom: 5px; 
+    margin-bottom: 0.31rem; 
     font-weight: bold; 
 } 
 
 input, textarea { 
-    margin-bottom: 15px; 
-    padding: 10px; 
+    margin-bottom: 0.93rem; 
+    padding: 0.25rem; 
     border: 1px solid #ccc; 
     border-radius: 4px; 
-    font-size: 16px; 
+    font-size: 1rem; 
     width: 100%; 
     box-sizing: border-box; 
 } 
@@ -195,9 +215,124 @@ button {
     border: none; 
     border-radius: 4px;
     cursor: pointer; 
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+
+/* --> P A G I N A - R E S P O N S I V A <-- */ /* --> PAGINA RESPONSIVA <-- */
+
+@media (min-width: 481px) and (max-width:1200px) {
+
+    #height {    
+        height: 44rem;
+        align-items: center;
+    }  
+
+    .main-section-secondary{
+        gap: 8rem;
+    }
+
+    .main-section-secondary-img {
+        width: 30rem;  
+        border: 3px;
+        border-style: solid;
+        border-color: #000;
+    }
+
+    .main-section-description {
+        padding-left: 8rem;
+    }
+
+    .description-secondary-title {
+        font-size: 2rem;
+    }
+    
+    .description-secondary {
+        font-size: 1.75rem;    
+    }
+}
+
+@media (max-width: 480px) { 
+    
+    .header { 
+        padding: 2% 5%;
+        background-color: var(--corPrincipal);
+    } 
+
+    .header-nav { 
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        color: var(--corPrincipal);
+        font-size: 1.4rem;
+    } 
+
+    .header-nav a { 
+        padding: 0.62rem 0; 
+        text-align: center; 
+        display: block; 
+    } 
+
+    .description  {
+        width: 18.75rem;
+        align-items:center;
+    }
+
+    .main-section-secondary {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        background-color: var(--corSecundaria);
+        color:var(--corTextoSecundaria);        
+        padding-left: 0px;
+    }
+
+    #height {    
+        height: 45rem;
+        align-items: center;
+    }  
+
+    /* .main-section-description {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    } */
+
+    .description-secondary-title {
+        padding-left: 25%;
+        width: 20rem;
+        text-align: center;
+    }
+
+    .description-secondary {
+        font-size: 1.60rem;
+        justify-items: center;
+        padding: 5%;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .main-section-secondary-img {
+        display: none;
+    }
+
+    .img-480 {
+        display: flex;
+        padding-left:130px;
+        width: 300px;
+    }
+
+    .menu-toggle:checked ~ .header-nav {      
+        display: flex;
+    }
+    
+    .menu-icon { 
+        display: block; 
+    } 
 }
